@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - DramaCuts Uploader</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+           max-width: 720px; margin: 48px auto; padding: 0 20px; line-height: 1.65; color: #202124; }
+    h1 { font-size: 26px; } h2 { font-size: 18px; margin-top: 28px; }
+    a { color: #1a73e8; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p><strong>Effective date:</strong> November 26, 2026</p>
+  <p>This policy describes how <strong>DramaCuts Uploader</strong> ("the application") handles
+     information when it connects to Google APIs. The application is a personal, single-user
+     command-line tool operated by the owner of the YouTube channel it uploads to.</p>
+
+  <h2>What the application does</h2>
+  <p>The application runs locally on the operator's computer. Its only purpose is to upload
+     video files chosen by the operator to that operator's own YouTube channel, and to read back
+     the resulting video status (video ID, privacy status, upload status and processing status).</p>
+
+  <h2>Google user data accessed</h2>
+  <p>With the operator's explicit OAuth consent, the application requests these scopes:</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/youtube.upload</code> - to upload videos to the
+        authorized channel.</li>
+    <li><code>https://www.googleapis.com/auth/youtube.readonly</code> - to read the channel
+        identity and the status of videos that were uploaded.</li>
+  </ul>
+  <p>It reads only the authorized channel's basic identity (channel ID, title, handle) and the
+     metadata of videos uploaded by the application itself. It does not read messages, comments,
+     playlists, analytics, contacts, or any other Google user data, and it does not access data
+     belonging to any other user.</p>
+
+  <h2>How data is stored and used</h2>
+  <ul>
+    <li>Video files remain on the operator's local computer and are uploaded only to the
+        operator's own YouTube channel.</li>
+    <li>The OAuth access and refresh tokens are stored only on the local computer, in a file
+        readable solely by the operator's OS account. They are never transmitted to any third
+        party or server operated by the developer.</li>
+    <li>No data is sold, shared, or used for advertising, profiling, machine learning, or any
+        purpose other than performing the upload requested by the operator.</li>
+    <li>The application has no server-side component, no database, no telemetry, and no
+        third-party analytics or tracking scripts.</li>
+  </ul>
+
+  <h2>Retention and deletion</h2>
+  <p>The operator controls all data. Deleting the local token file immediately revokes the
+     application's ability to call Google APIs, and access can also be revoked at any time from
+     the operator's Google Account permissions page. Uploaded videos can be deleted from
+     YouTube Studio. No copy of user data is retained by the developer elsewhere.</p>
+
+  <h2>Limited Use disclosure</h2>
+  <p>DramaCuts Uploader's use and transfer to any other app of information received from Google
+     APIs will adhere to the
+     <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API
+     Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:yestinsong@gmail.com">yestinsong@gmail.com</a>.</p>
+  <p><a href="index.html">Back to application home</a></p>
+</body>
+</html>
